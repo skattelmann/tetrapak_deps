@@ -1,7 +1,7 @@
 #!/bin/sh
 mkdir -p temp
 cd temp
-curl https://raw.github.com/travelping/tetrapak_deps/master/cloner.sh | sh
-curl https://raw.github.com/travelping/tetrapak_deps/master/build_install.sh | sh
-cd ..
+git clone https://github.com/travelping/tetrapak_deps.git
+sh tetrapak_deps/cloner.sh
+sh tetrapak_deps/build_install.sh
 rm -rf temp
